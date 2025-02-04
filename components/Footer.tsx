@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+const year = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <footer className="flexCenter mb-24">
@@ -58,7 +60,7 @@ const Footer = () => {
 
         <div className="border bg-gray-20" />
         <p className="regular-14 w-full text-center text-gray-30">
-          2023 Hilink | All rights reserved
+          {year} Hilink | All rights reserved
         </p>
       </div>
     </footer>
